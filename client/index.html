@@ -3,32 +3,28 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>WebSocket + Wasm Demo</title>
+	<title>Multiplayer Square Game</title>
 	<style>
 		body {
 			font-family: sans-serif;
 			padding: 20px;
 		}
 
-		button {
-			padding: 10px 20px;
-			font-size: 16px;
-			margin-bottom: 20px;
+		canvas {
+			display: block;
+			margin: 20px auto;
 		}
 
-		#messages {
-			border: 1px solid #ccc;
-			padding: 10px;
-			height: 300px;
-			overflow-y: auto;
+		p {
+			text-align: center;
 		}
 	</style>
 </head>
 
 <body>
-	<h1>WebSocket + Wasm Demo</h1>
+	<h1>Multiplayer Square Game</h1>
 	<script type="module">
-		import init from './pkg/client.js';
+		import init from "./pkg/client.js";
 
 		async function run() {
 			await init();
