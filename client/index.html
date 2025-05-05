@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>WebSocket + Wasm Demo</title>
+	<style>
+		body {
+			font-family: sans-serif;
+			padding: 20px;
+		}
+
+		button {
+			padding: 10px 20px;
+			font-size: 16px;
+			margin-bottom: 20px;
+		}
+
+		#messages {
+			border: 1px solid #ccc;
+			padding: 10px;
+			height: 300px;
+			overflow-y: auto;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>WebSocket + Wasm Demo</h1>
+	<script type="module">
+		import init from './pkg/client.js';
+
+		async function run() {
+			await init();
+		}
+
+		run();
+	</script>
+</body>
+
+</html>

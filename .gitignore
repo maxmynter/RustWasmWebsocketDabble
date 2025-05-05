@@ -1,0 +1,24 @@
+# General Rust ignores
+/target/
+**/*.rs.bk
+Cargo.lock  # (But sometimes you want to commit this for binaries/apps!)
+
+# WASM-specific ignores
+/pkg/      # wasm-pack output (if using default pkg dir)
+/wasm/pkg/ # (if you have a dedicated wasm pkg dir)
+*.wasm
+*.js
+*.d.ts
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Node.js (if applicable)
+node_modules/
